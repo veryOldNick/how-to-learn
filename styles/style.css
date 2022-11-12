@@ -9,11 +9,15 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*Шапка*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +32,86 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  background-size: contain;
+  background-position: center;
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 20px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  left: 64px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600px;
+  z-index: 2;
+  align-items: center;
+}
+
+.header__subtitle {
+  margin: 0 auto;
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+  left: 64px;
+  bottom: 30px;
+  max-width: 388px;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  z-index: 1;
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+}
+
+.header__square-pic {
+  background-color: #2f80ed;
+}
+
+/*Контент*/
+.content {
+
+}
+
+.description {
+
+}
+
+.digits {
+
+}
+
+.feynman {
+
+}
+
+.kaufman {
+
+}
+
+/*Подвал*/
+.footer {
+
 }
